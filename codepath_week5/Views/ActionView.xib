@@ -18,19 +18,17 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title of ActionView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB6-Ii-1bN">
-                    <rect key="frame" x="116" y="106" width="142" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of ActionView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB6-Ii-1bN">
+                    <rect key="frame" x="116" y="65" width="142" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sns-HA-TqY">
-                    <rect key="frame" x="140" y="172" width="94" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sns-HA-TqY">
+                    <rect key="frame" x="140" y="106" width="94" height="30"/>
                     <state key="normal" title="Action Button"/>
                     <connections>
                         <action selector="actionTapped:" destination="-1" eventType="touchUpInside" id="xl9-QZ-5aQ"/>
@@ -38,7 +36,16 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sns-HA-TqY" firstAttribute="top" secondItem="FB6-Ii-1bN" secondAttribute="bottom" constant="20" id="SWz-ml-Djj"/>
+                <constraint firstItem="FB6-Ii-1bN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="65" id="T10-4M-IKE"/>
+                <constraint firstItem="Sns-HA-TqY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bEy-CH-8Oy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Sns-HA-TqY" secondAttribute="bottom" constant="10" id="pyR-ht-FNc"/>
+                <constraint firstItem="FB6-Ii-1bN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t4h-EF-vs2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="-130.5"/>
         </view>
     </objects>
 </document>
