@@ -16,9 +16,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5N-9O-VHb" customClass="ActionView" customModule="codepath_week5" customModuleProvider="target">
+                                <rect key="frame" x="65" y="95" width="245" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Vkn-kP-hho"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I5N-9O-VHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dsr-bk-UXk"/>
+                            <constraint firstItem="I5N-9O-VHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="v6B-ry-Qyz"/>
+                            <constraint firstItem="I5N-9O-VHb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="zli-Er-osJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="actionView" destination="I5N-9O-VHb" id="O5M-3d-HJH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
