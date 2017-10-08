@@ -26,7 +26,7 @@ class ActionView: UIView {
 		initSubviews()
 	}
 	
-	//Needed for using this view programatically
+	//Needed for using this view programmatically
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		initSubviews()
